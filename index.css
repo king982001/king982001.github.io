@@ -172,28 +172,28 @@ text-align: left;
 }
 
 .about-sect-1{
-    background:url('ushering.jpg')no-repeat left;
+    background:url(img/ushering.jpg)no-repeat left;
     background-size:55% ;
     border-color:#fdfdfd ;
     overflow:hidden ;
     padding: 100px 0;
 }
 .about-sect-2{
-    background: url('praiseandworship.jpg')no-repeat left;
+    background: url(img/praiseandworship.jpg)no-repeat left;
     background-size:55% ;
     border-color:#fdfdfd ;
     overflow:hidden ;
     padding: 100px 0;
 }
 .about-sect-3{
-    background: url("img\prayergroup.jpg")no-repeat left;
+    background: url(img/prayergroup.jpg)no-repeat left;
     background-size:55% ;
     border-color:#fdfdfd ;
     overflow:hidden ;
     padding: 100px 0;
 }
 .about-sect-4{
-    background: url('img\giving.jpg')no-repeat left;
+    background: url(img/giving.jpg)no-repeat left;
     background-size:55% ;
     border-color:#fdfdfd ;
     overflow:hidden ;
