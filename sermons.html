@@ -1,7 +1,7 @@
 <html>
     <head>
         <title></title>
-           <link rel="stylesheet"href="sermons.css">
+           <link rel="stylesheet"href="">
            <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
              <body>
@@ -11,59 +11,33 @@
                   <h1> Weekly Sermons</h1>
                     </center>
                       </font>
-                  <div class="row">
-                      <div class="col">
-                          <div class="feature"> 
-                              <img src="img\sermon.jpg" width="100%"> 
-                              <img src="img\play.png" class="play-btn" onclick="playVideo(https://youtu.be/K7N36v1GCOk)">  
-                          </div>
-                      </div>
-                      <div class="col">
-                          <div class="small-img-row">
-                              <div class="smallimg">
-                                  <img src="img\sermonpic1.jpg" width="50%">
-                                  <img src="img\play.png" class="play-btn" onclick="playVideo(https://youtu.be/K7N36v1GCOk)"> 
-                              </div>
-                              <p>PU service 1</p>
-                          </div>
-                          <iframe src="https://drive.google.com/file/d/1IyfftfMuYWZuNSRexhqIVj2uUweV5VoT/preview" width="640" height="480" allow="autoplay"></iframe>
-                          <div class="small-img-row">
-                            <div class="smallimg">
-                                <img src="img\sermonpic1.jpg" width="50%">
-                                <iframe src="https://drive.google.com/file/d/1IyfftfMuYWZuNSRexhqIVj2uUweV5VoT/preview" width="640" height="480" allow="autoplay"></iframe>
-                            </div>
-                            <p>PU service 2</p>
-                        </div>
-                        <div class="small-img-row">
-                            <div class="smallimg">
-                                <img src="img\sermonpic1.jpg" width="50%">
-                                <img src="img\play.png" class="play-btn" onclick="playVideo()"> 
-                            </div>
-                            <p>PU service 3</p>
-                        </div>
-                        
-                      </div>
-                  </div>
-                 </div>
-                 <div class="video-player" id="VideoPlayer">
-                     <video width="100%"controls autoplay id="myVideo">
-                         <source src="vid"type="video/mp4">
-                     </video>
-                     <img src="img\x-button.png" class="close-btn" onclick="stopVideo()"> 
-                 </div>
-                 <script>
-                     var VideoPlayer=document.getElementById("VideoPlayer");
-                     var myVideo=document.getElementById("myVideo");
-                     function stopVideo(){
+                  <head>
+  <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
 
-                     VideoPlayer.style.display="none";
-                    }
-                         function playVideo(file){
-                         
-                            myVideo.src=file;
-                            VideoPlayer.style.display="block";
-                     }
-                     </script>
-             </body>
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+</head>
+  <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="MY_VIDEO_POSTER.jpg"
+    data-setup="{}"
+  >
+    <source src=""https://drive.google.com/file/d/1IyfftfMuYWZuNSRexhqIVj2uUweV5VoT/preview" width="640" height="480" allow="autoplay"" type="video/mp4" />
+    <source src=""https://drive.google.com/file/d/1IyfftfMuYWZuNSRexhqIVj2uUweV5VoT/preview" width="640" height="480" allow="autoplay"" type="video/webm" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+  <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+</body>
     </head>
 </html>
