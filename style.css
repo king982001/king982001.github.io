@@ -266,6 +266,10 @@ video-js .vjs-menu-button-inline.vjs-slider-active,.video-js .vjs-menu-button-in
     font-size: 12px
 }
 
+.video-js .vjs-load-progress {
+    background: rgba(255,255,255,0.3);
+}
+
 .video-js .vjs-play-progress,.video-js  .vjs-volume-level {
     background-color: #cc181e
 }
