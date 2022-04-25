@@ -218,6 +218,13 @@ text-align: left;
     text-align:justify;
     margin: bottom 40px; ;
 }
+.tes{
+    font-size: 18px;
+    color:#000000;
+    line-height: 30px;
+    text-align:justify;
+    margin: bottom 40px; ;
+}
 .ski{
     display: flex;
     justify-content: space-between;
