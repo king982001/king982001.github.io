@@ -29,7 +29,7 @@ body {
 /* Fake image */
 .fakeimg {
   background-color: #aaa;
-  background: #fff url(img/ushers) no-repeat top right;
+ background: url(img/choir.jpg)no-repeat left;
   width: 100%;
   padding: 20px;
 }
