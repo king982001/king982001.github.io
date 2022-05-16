@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background:rgba(0,0,100,0.4);
+}
+.feature{ 
+    width:83%;
+    margin: auto;
+    position: relative;
+    border-radius:6px;
+    overflow:hidden; 
+}
+.sucess{
+   width: 80%;
+    margin: 80px auto;
+}
+.sucess h1
+{
+    padding: 60px 0;
+    text-decoration-color: #fff;;
+    font-size:44px ;
+    text-align:center;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis:50%;
+    min-width: 250px;
+}
+.small-img-row{
+    display: flex;
+    background:#efefef ;
+    margin: 20px 0;
+    align-items:center;
+    border-radius: 6px;
+    overflow: hidden;
+    width:85%;
+}
+.smallimg{
+    position: relative;
+}
+.smallimg img{
+   width:150px;
+}
+.small-img-row p{
+    margin-left: 20px;
+    color:#707070;
+    line-height: 22px;
+    font: size 15px;
+}
+.play-btn{
+    width:60px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50% ,-50%);
+    cursor:pointer;
+}
+.smallimg img.play-btn {
+    width:35px;
+}
+.video-player{
+    width: 80%;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50% ,-50%);
+    display:none;
+}
+.video :focus{
+    outline: none;
+}
+.close-btn{
+    position: absolute;
+    top:10px ;
+    right:10px ;
+    width: 30px;
+    cursor: pointer;
+}
+.content-overlay{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width:50% ;
+    height:100% ;
+    overflow: hidden;
+transition:transform 0.6s ease-in-out;
+z-index: 100;
+}
+.content .right-panel-active .content-overlay{
+    transform:translateX(-100%); 
+}
+.overlay{
+    background: #ff416c;
+    background:-webkit-linear-gradient(to right,#ff4828,#ff416c);
+    background:linear-gradient(to right,#ff4828,#ff416c);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    color: #FFFFFF;
+    position: relative;
+    left:-100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+
+}
+.content .right-panel-active .content-overlay{
+    transform:translateX(50%); 
+}
+.overlay-panel{
+    position:absolute ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align:center;
+    top:0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+.overlay.left{
+    transform: translateX(-20);
+}
+.content .right-panel-active .overlay-left{
+    transform:translateX(0); 
+}
