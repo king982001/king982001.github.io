@@ -29,6 +29,7 @@ body {
 /* Fake image */
 .fakeimg {
   background-color: #aaa;
+  background: #fff url(img/ushers) no-repeat top right;
   width: 100%;
   padding: 20px;
 }
