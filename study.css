@@ -73,6 +73,7 @@ body {
   letter-spacing:4px;
 }
 .card p{
+  margin:1em;
   padding:2% 0;
   line-height:30px;
   text-align:justify;
