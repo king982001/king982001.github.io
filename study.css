@@ -10,6 +10,7 @@ body {
   font-size: 40px;
   text-align: center;
   background: url(img/bible.png)no-repeat left;
+  object-fit: contain;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -32,6 +33,7 @@ body {
  background: url(img/rom.jpg)no-repeat left;
   width: 100%;
   padding: 20px;
+  object-fit: contain;
 }
 
 /* Add a card effect for articles */
