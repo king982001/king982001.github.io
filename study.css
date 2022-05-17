@@ -6,11 +6,30 @@ body {
 
 /* Header/Blog Title */
 .header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: url(img/king (2).jpg)no-repeat left;
-  object-fit: contain;
+  background: url(img/bible)no-repeat left;
+  background-size:cover;
+  background-position:center center;
+  top:100px;
+  height:100vh;
+  width:100%;
+  position:fixed;
+}
+.header:after{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  display:block;
+  width:100%;
+  height:100%;
+  background:#130f40;
+  opacity:.7;
+  z-ndex:-1;
+}
+.header h2{
+  padding-top:8%;
+  font-size:80px;
+  colour:#fff;
 }
 
 /* Create two unequal columns that floats next to each other */
