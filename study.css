@@ -30,9 +30,10 @@ body {
   z-ndex:-1;
 }
 .header h2{
+  text-align: center;
   padding-top:8%;
   font-size:80px;
-  colour:#fff;
+  color:#fff;
 }
 
 /* Create two unequal columns that floats next to each other */
