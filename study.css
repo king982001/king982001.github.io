@@ -63,6 +63,17 @@ body {
   background-color: white;
   top:600px
 }
+.card h2{
+  font-size:40px;
+  margin:0;
+  padding-top:30px;
+  letter-spacing:4px;
+}
+.card p{
+  padding:2% 0;
+  line-height:30px;
+  text-align:justify;
+}
 
 /* Clear floats after the columns */
 .row:after {
