@@ -1,7 +1,7 @@
 body {
   font-family: Arial;
   padding: 20px;
-  background: url(img/art.jpg)no-repeat left;
+
 }
 
 /* Header/Blog Title */
@@ -9,7 +9,7 @@ body {
   padding: 30px;
   font-size: 40px;
   text-align: center;
-  background: white;
+  background: url(img/art.jpg)no-repeat left;
 }
 
 /* Create two unequal columns that floats next to each other */
