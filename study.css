@@ -9,7 +9,7 @@ body {
 
 /* Header/Blog Title */
 .header {
-  background: url(img/bible.png);
+  background: url(img/art.jpg);
   background-size:cover;
   background-position:center center;
   top:100px;
@@ -52,7 +52,7 @@ body {
 /* Fake image */
 .fakeimg {
  background-color: #aaa;
- background: url(img/rom.jpg)no-repeat left;
+ background: url(img/rom.jpg);
   width: 100%;
   padding: 20px;
   object-fit: contain;
