@@ -6,7 +6,9 @@
            <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="stylesheet"href="mainpage.css">
+      <link rel="stylesheet"href="ContactUs.css">
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -51,59 +53,94 @@
           </nav>
         <!--TOP NAVBAR AND SUBMENU SECTION-->
         </section>
-<div class="container-contact100">
-<div class="wrap-contact100">
-<form class="contact100-form validate-form">
-<span class="contact100-form-title">
-<section class="pop">
-            <h1 "font-color:white;">Contact Us</h1>
-        </section>
-Send Us A Message
-</span>
-</div>
-</form>
-<div class="contact100-more flex-col-c-m">
-<div class="flex-w size1 p-b-47">
-<div class="txt1 p-r-25">
-<span class="lnr lnr-map-marker"></span>
-</div>
-<div class="flex-col size2">
-<span class="txt1 p-b-20">
-Address
-</span>
-<span class="txt2" >
-Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
-</span>
-</div>
-</div>
-<div class="dis-flex size1 p-b-47">
-<div class="txt1 p-r-25">
-<span class="lnr lnr-phone-handset"></span>
-</div>
-<div class="flex-col size2">
-<span class="txt1 p-b-20">
-Lets Talk
-</span>
-<span class="txt3">
-+1 800 1236879
-</span>
-</div>
-</div>
-<div class="dis-flex size1 p-b-47">
-<div class="txt1 p-r-25">
-<span class="lnr lnr-envelope"></span>
-</div>
-<div class="flex-col size2">
-<span class="txt1 p-b-20">
-General Support
-</span>
-<span class="txt3">
-+1 800 1236879
-</span>
-</div>
-</div>
-</div>
-</div>
-</div>
+	<section>
+		<form method="post" autocomplete="off" name="google-sheet">
+                  <div class="contain">
+                      <div class="contain-box">
+                          <div class="left">
+                              <div class="right">
+                                  <h2>ContactUs</h2>
+                                  <input type="text" name="Name" value="name" class="field" placeholder="Your Full Name">
+                                  <input type="email" name="Email" value="email"class="field" placeholder="Your Email Address">
+                                  <input type="number" name="Phone" value="phone" class="field" placeholder="Your PhoneNumber">
+                                  <textarea class="field" name="Message" value= "message" placeholder ="Message"></textarea> 
+                                  <input type="submit" class="btn-contact"name="submit" value="Submit">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+		</form>
+	<script type="text/javascript">
+
+
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbz0RDqKF5dm5HIEK64qkYddGirGh512zwnw-JdAcowSC7EgCBRBgaRUXAqLS5BbcMJe/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("You have successfully submitted."))
+                .catch(error => console.error('Error!', error.message))
+            })
+  </script>
+      </section>
+<section>
+	<br>
+	<br>
+	<br>
+	<br>
+</section>
+<div class="footer">
+                   <div class="footer-content">
+                       <div class="footer-section about">
+                       <h1 class="logo-txt">Parul Scripture Union<span></span></h1>
+                       <p>
+		Then He *said to His disciples, “The harvest is plentiful, but the workers are few. 
+	        Therefore beseech the Lord of the harvest to send out workers into His harvest.” Matthew 9:37-38.
+			       
+		       </p>
+                        <div class="contact"
+                            <i class="fa fa-phone"><span></span> &nbsp; +91 93160 4416(Pamela)</i>
+                            <i class="fa fa-envelope"><span></span> &nbsp; chinguno.555@gmail.com</i>
+                         </div>
+                        <div class="social-media">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </div>
+                    </div>
+                           <div class="footer-section links">
+                               <h2>Quick Links</h2>
+                               <br>
+                               <ul>
+                                   <a href="https://king982001.github.io/successstories.html">
+                                   <li>Events</li>
+                                    </a>
+                                   <a href="https://king982001.github.io/leaders.html">
+                                    <li>Our Leaders</li>
+                                    </a>
+                                   <a href="#">
+                                    <li>Terms and Condition</li>
+                                    </a>
+                                   <a href="#">
+                                    <li>Privacy Policy</li>
+                                    </a>
+                               </ul>
+                           </div>
+                               <div class="footer-section contactform">
+                                 <iframe title="Are you closer to God? by Pastor Roy Phillip" allowtransparency="true" height="250" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=8ruc2-11659d4-pb&from=pb6admin&square=1&share=1&download=1&rtl=0&fonts=Arial&skin=956f46&font-color=auto&btn-skin=956f46&size=300" allowfullscreen=""></iframe>
+                                  <br>
+                                  <br>
+                                   <br>
+                                </div>  
+                       <div class="footer-bottom">
+                           &copy; psu.com |All Rights Reserved.| @2022
+                       </div>
+                   </div>
+               </div>     
+               <!--Footer Copyright Section-->
+</body>
+<script src="landingpage.js"></script>
         </body>
 </html>
