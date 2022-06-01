@@ -4,7 +4,7 @@
     font-family: 'Nunito', sans-serif;
 }
 .html,.body{
-    background-color: rgb(255, 255, 255);
+    background: url(img/time.jpg);
     height: 100%;
     display: flex;
     justify-content: center;
