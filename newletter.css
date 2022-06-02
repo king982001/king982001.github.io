@@ -30,7 +30,7 @@ body{
   width: 40px;
   line-height: 40px;
 }
-.tbox,.btn{
+.tbox,.btnz{
   border: none;
   outline: none;
 }
@@ -42,7 +42,7 @@ body{
   width: 260px;
   padding: 0 10px;
 }
-.btn{
+.btnz{
   background: #2f3542;
   color: white;
   padding: 0 10px;
