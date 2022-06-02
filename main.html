@@ -404,17 +404,30 @@
    <!--NEWSLETTER SECTION-->
         <section>
 		<div class="containerz">
-    <form action="">
+    <form method="post" autocomplete="off" name="google-sheet">
       <h1>Join Our Newsletter</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+      <p>Subscribe to our monthly newsletter and get real updates about our upcoming proceedings.A complete outline of all our events, so that you can better prepare 
+	    for the month.</p>
       <div class="email-box">
         <i class="fas fa-envelope"></i>
-        <input class="tbox" type="email" name="" value="" placeholder="Enter your email">
-        <button class="btn" type="button" name="button">Subscribe</button>
+        <input class="tbox" type="email" name="Email" value="Email" placeholder="Enter your email">
+        <button class="btn" type="submit" name="submit"  value="Submit" required="";>Subscribe</button>
       </div>
     </form>
   </div>
 </section
+<script type="text/javascript">
+
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbwsYinGFAQgKMcsYpLWSGhGob6eLGMgHN0I5Pk8nRUouR3A8cHxlmimd7akCqmwO92W/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("You have successfully subscribed."))
+                .catch(error => console.error('Error!', error.message))
+            })
+  </script>
         <section class="pop">
 	<marquee width="100%" behaviour=" alternate" bgcolor="yellow">
         <p>Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you.-1 Thessalonians 5:16-18.&nbsp;&nbsp;&nbsp;&nbsp;Join us for Monday Intercession Prayers-5:00PM-Venue:Homeopathy Building.&nbsp;&nbsp;Tuesday Family Meeting-5:00PM-Venue:Homeopathy Building.&nbsp;&nbsp;
