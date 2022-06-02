@@ -416,18 +416,6 @@
     </form>
   </div>
 </section
-<script type="text/javascript">
-
-	  const scriptURL = 'https://script.google.com/macros/s/AKfycbwoeLsQjBVYj2BWfsTuGdzBScUFpOWsY04HdOKmf_qxg4SGC6Iums1bYyeCMj5-3c-pAw/exec'
-            const form = document.forms['google-sheet']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("You have successfully subscribed."))
-                .catch(error => console.error('Error!', error.message))
-            })
-  </script>
         <section class="pop">
 	<marquee width="100%" behaviour=" alternate" bgcolor="yellow">
         <p>Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you.-1 Thessalonians 5:16-18.&nbsp;&nbsp;&nbsp;&nbsp;Join us for Monday Intercession Prayers-5:00PM-Venue:Homeopathy Building.&nbsp;&nbsp;Tuesday Family Meeting-5:00PM-Venue:Homeopathy Building.&nbsp;&nbsp;
@@ -488,6 +476,18 @@
                    </div>
                </div>     
                <!--Footer Copyright Section-->
+<script type="text/javascript">
+
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbwoeLsQjBVYj2BWfsTuGdzBScUFpOWsY04HdOKmf_qxg4SGC6Iums1bYyeCMj5-3c-pAw/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("You have successfully subscribed."))
+                .catch(error => console.error('Error!', error.message))
+            })
+  </script>
 </body>
 <script src="landingpage.js"></script>
 </html>
