@@ -8,7 +8,6 @@ body{
 }
 .containerz{
   background: url('img/newsletter.jpg') no-repeat center;
-  opacity: 0.40;
   background-size: cover;
   padding: 100px 40px;
   text-align: center;
