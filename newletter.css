@@ -8,10 +8,11 @@ body{
 }
 .containerz{
   background: url('img/newsletter.jpg') no-repeat center;
+  background: rgba(39,62,84,0.82);
   background-size: cover;
   padding: 100px 40px;
   text-align: center;
-  color: black;
+  color: white;
 }
 .containerz p {
   max-width: 600px;
