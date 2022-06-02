@@ -7,7 +7,7 @@ body{
   background: #333;
 }
 .containerz{
-  background: linear-gradient(to top, #3204fdba, #9907facc), url('img/newsletter.jpg') no-repeat top center;
+  background: url('img/newsletter.jpg') no-repeat center;
   background-size: cover;
   padding: 100px 40px;
   text-align: center;
